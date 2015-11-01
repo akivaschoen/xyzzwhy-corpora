@@ -9,6 +9,8 @@
    [com.novemberain/monger "3.0.1"]
    [environ "1.0.1"]]
 
+  :main xyzzwhy-corpora.core
+
   :profiles
   {:uberjar
    [:prod-config
