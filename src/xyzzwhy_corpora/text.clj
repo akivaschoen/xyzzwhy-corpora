@@ -1,4 +1,4 @@
-(ns xyzzwhy.text)
+(ns xyzzwhy-corpora.text)
 
 ;; This text presents source material for xyzzwhy's original corpus. Each
 ;; class (such as :location-events or :obstacles) is a map containing map
