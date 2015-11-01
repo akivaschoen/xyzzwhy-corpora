@@ -1,0 +1,1 @@
+Get monger to say 'hello' to the database at mongolab.
