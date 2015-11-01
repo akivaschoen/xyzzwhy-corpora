@@ -4,11 +4,19 @@
   :license {:name "GNU General Public License"
             :url "http://www.gnu.org/licenses/gpl.html"}
 
-  :jvm-opts ["-XX:MaxPermSize=256m"]
+  :dependencies
+  [[org.clojure/clojure "1.7.0"]
+   [com.novemberain/monger "3.0.1"]
+   [environ "1.0.1"]]
 
-  :dependencies [[org.clojure/clojure "1.7.0"]
-                 [com.novemberain/monger "3.0.1"]
-                 [environ "1.0.1"]]
+  :profiles
+  {:uberjar
+   [:prod-config
+    {:env {:production true}
+     :omit-source true
+     :aot :all}]
 
-  :profiles {:dev {:plugins []
-                   :dependencies []}})
+   :dev
+   [:dev-config
+    {:plugins []
+     :dependencies []}]})
