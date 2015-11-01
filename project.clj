@@ -9,6 +9,9 @@
    [com.novemberain/monger "3.0.1"]
    [environ "1.0.1"]]
 
+  :plugins
+  [[lein-environ "1.0.1"]]
+
   :main xyzzwhy-corpora.core
 
   :profiles
@@ -20,5 +23,6 @@
 
    :dev
    [:dev-config
-    {:plugins []
+    {:env {:dev true}
+     :plugins []
      :dependencies []}]})
