@@ -2046,18 +2046,6 @@
     {:text "VHS tape covered in blood"
      :article "a"}]})
 
-
-(def disasters
-  {:disasters
-   [
-    {:text ["fire" "tornado" "flood" "tsunami" "landslide"
-            "radioactive leak" "lava flow" "sandstorm" "lightning strike"
-            "plague of locusts" "snowstorm" "duststorm"]
-     :options {:articles ["a"]}}
-
-    {:text ["avalanche"]
-     :options {:articles ["an"]}}]})
-
 (def obstacles
   {:obstacles
    [{:text "a black comb on the ground"}
