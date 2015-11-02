@@ -1,1 +1,29 @@
 Get monger to say 'hello' to the database at mongolab.
+
+* Fragments
+** Keys
+*** :text
+*** :article
+If present, supercedes the prefix-article function.
+*** :sub
+**** :class
+**** :config
+*** :modifier
+**** :config :EITHER/:both
+**** :ambifix/:prefix/:suffix
+***** :multiple? true/FALSE/#
+If #, allows that many repetitions
+***** :option
+*** :follow-up
+***** :optional? TRUE/false
+***** :option
+Contains fragments.
+*** :variant
+% chance of option activation based on number of options + 1
+Contains fragments except for :text.
+**** :override? TRUE/false
+If true, all options replace general options.
+
+* Stuff todo
+** Add :qualifier key
+*** For person :famous
