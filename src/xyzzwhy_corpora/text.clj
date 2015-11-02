@@ -1869,52 +1869,7 @@
     {:text "scotch"
      :article "a"}]})
 
-(def garments
-  {:garments
-   [{:text "hat"
-     :article "a"}
 
-    {:text "pants"
-     :article "some"}
-
-    {:text "shirt"
-     :article "a"}
-
-    {:text "gloves"
-     :article "some"}
-
-    {:text "shoes"
-     :article "some"}
-
-    {:text "belt"
-     :article "a"}
-
-    {:text "socks"
-     :article "some"}
-
-    {:text "coat"
-     :article "a"}
-
-    {:text "jacket"
-     :article "a"}
-
-    {:text "underwear"
-     :article "some"}
-
-    {:text "dress"
-     :article "a"}
-
-    {:text "skirt"
-     :article "a"}
-
-    {:text "schizophrenic mood ring"
-     :article "a"}
-
-    {:text "sweater"
-     :article "a"}
-
-    {:text "watch"
-     :article "a"}]})
 
 
 
