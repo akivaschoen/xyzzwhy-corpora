@@ -2089,32 +2089,6 @@
   {:news
    [{:text "Shamer Claims Bullying from Shame Shamers"}]})
 
-(def games
-  {:games
-   [{:text "Agricola"
-     :type :tabletop}
-
-    {:text "Advanced Squad Leader"
-     :type :tabletop}
-
-    {:text "Carcassonne"
-     :type :tabletop}
-
-    {:text "World in Flames"
-     :type :tabletop}
-
-    {:text "Monopoly"
-     :type :tabletop}
-
-    {:text "World of Warcraft"
-     :type :video}
-
-    {:text "Civilization V"
-     :type :video}
-
-    {:text "Grand Theft Auto V"
-     :type :video}]})
-
 (def classes
   ["events"
    "location-events"
