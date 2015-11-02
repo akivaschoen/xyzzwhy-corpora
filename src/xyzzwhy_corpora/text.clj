@@ -2085,10 +2085,6 @@
     {:text "double-double Animal style"}
     {:text "someone who doesn’t know how to eat a goddamned Oreo properly"}]})
 
-(def news
-  {:news
-   [{:text "Shamer Claims Bullying from Shame Shamers"}]})
-
 (def classes
   ["events"
    "location-events"
