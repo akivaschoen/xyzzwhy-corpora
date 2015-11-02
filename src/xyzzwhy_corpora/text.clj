@@ -2046,514 +2046,96 @@
     {:text "VHS tape covered in blood"
      :article "a"}]})
 
-(def animals
-  {:animals
-   [{:text "aardvark"
-     :article "an"}
-
-    {:text "alligator"
-     :article "an"}
-
-    {:text "alpaca"
-     :article "an"}
-
-    {:text "antelope"
-     :article "an"}
-
-    {:text "ape"
-     :article "an"}
-
-    {:text "armadillo"
-     :article "an"}
-
-    {:text "baboon"
-     :article "a"}
-
-    {:text "badger"
-     :article "a"}
-
-    {:text "bat"
-     :article "a"}
-
-    {:text "bear"
-     :article "a"
-     :adjectives ["grizzly" "brown" "teddy"]}
-
-    {:text "beaver"
-     :article "a"}
-
-    {:text "bison"
-     :article "a"}
-
-    {:text "boar"
-     :article "a"}
-
-    {:text "buffalo"
-     :article "a"}
-
-    {:text "bull"
-     :article "a"}
-
-    {:text "bunny"
-     :article "a"}
-
-    {:text "buzzard"
-     :article "a"}
-
-    {:text "camel"
-     :article "a"}
-
-    {:text "canary"
-     :article "a"}
-
-    {:text "capybara"
-     :article "a"}
-
-    {:text "cat"
-     :article "a"
-     :sounds ["purrs" "meows" "growls"]
-     :adjectives ["purring" "meowing" "growling"]}
-
-    {:text "chameleon"
-     :article "a"}
-
-    {:text "cheetah"
-     :article "a"}
-
-    {:text "chicken"
-     :article "a"}
-
-    {:text "chimpanzee"
-     :article "a"}
-
-    {:text "chinchilla"
-     :article "a"}
-
-    {:text "chipmunk"
-     :article "a"}
-
-    {:text "cougar"
-     :article "a"}
-
-    {:text "cow"
-     :article "a"}
-
-    {:text "coyote"
-     :article "a"}
-
-    {:text "crocodile"
-     :article "a"}
-
-    {:text "crow"
-     :article "a"
-     :sounds ["caw"]}
-
-    {:text "dingo"
-     :article "a"}
-
-    {:text "dog"
-     :article "a"
-     :sounds ["pants" "barks" "growls" "whimpers"]
-     :adjectives ["panting" "barking" "growling" "whimpering"]}
-
-    {:text "dolphin"
-     :article "a"}
-
-    {:text "donkey"
-     :article "a"}
-
-    {:text "duck"
-     :article "a"
-     :sounds ["quacks"]
-     :adjectives ["quacking"]}
-
-    {:text "eagle"
-     :article "an"}
-
-    {:text "elephant"
-     :article "an"}
-
-    {:text "ewe"
-     :article "an"}
-
-    {:text "hawk"
-     :article "a"}
-
-    {:text "ferret"
-     :article "a"}
-
-    {:text "finch"
-     :article "a"
-     :sounds ["chirps"]}
-
-    {:text "fox"
-     :article "a"}
-
-    {:text "gazelle"
-     :article "a"}
-
-    {:text "gerbil"
-     :article "a"}
-
-    {:text "gila monster"
-     :article "a"}
-
-    {:text "giraffe"
-     :article "a"}
-
-    {:text "gnu"
-     :article "a"}
-
-    {:text "goat"
-     :article "a"}
-
-    {:text "gopher"
-     :article "a"}
-
-    {:text "gorilla"
-     :article "a"}
-
-    {:text "groundhog"
-     :article "a"
-     :adjectives ["repeating" "familiar"]}
-
-    {:text "guinea pig"
-     :article "a"}
-
-    {:text "hamster"
-     :article "a"}
-
-    {:text "hawk"
-     :article "a"}
-
-    {:text "hedgehog"
-     :article "a"
-     :adjectives ["prickly"]}
-
-    {:text "hippopotamus"
-     :article "a"}
-
-    {:text "hog"
-     :article "a"
-     :sounds ["snorts" "oinks"]
-     :adjuective ["snorting" "oinking"]}
-
-    {:text "horse"
-     :article "a"}
-
-    {:text "hyena"
-     :article "a"}
-
-    {:text "ibex"
-     :article "an"}
-
-    {:text "iguana"
-     :article "an"}
-
-    {:text "impala"
-     :article "an"}
-
-    {:text "jackal"
-     :article "a"}
-
-    {:text "jaguar"
-     :article "a"}
-
-    {:text "kangaroo"
-     :article "a"}
-
-    {:text "kitten"
-     :article "a"
-     :sounds ["purrs" "meows" "growls"]
-     :adjectives ["purring" "meowing" "growling"]}
-
-    {:text "koala"
-     :article "a"}
-
-    {:text "lamb"
-     :article "a"}
-
-    {:text "lemur"
-     :article "a"}
-
-    {:text "leopard"
-     :article "a"}
-
-    {:text "lion"
-     :article "a"}
-
-    {:text "lizard"
-     :article "a"}
-
-    {:text "llama"
-     :article "a"}
-
-    {:text "lynx"
-     :article "a"}
-
-    {:text "magpie"
-     :article "a"}
-
-    {:text "marmot"
-     :article "a"}
-
-    {:text "mink"
-     :article "a"}
-
-    {:text "mole"
-     :article "a"}
-
-    {:text "mongoose"
-     :article "a"}
-
-    {:text "monkey"
-     :article "a"}
-
-    {:text "moose"
-     :article "a"}
-
-    {:text "mule"
-     :article "a"}
-
-    {:text "muskrat"
-     :article "a"}
-
-    {:text "moose"
-     :article "a"}
-
-    {:text "mountain goat"
-     :article "a"}
-
-    {:text "mouse"
-     :article "a"}
-
-    {:text "mule"
-     :article "a"}
-
-    {:text "muskrat"
-     :article "a"}
-
-    {:text "mynah bird"
-     :article "a"}
-
-    {:text "newt"
-     :article "a"}
-
-    {:text "ocelot"
-     :article "an"}
-
-    {:text "opossum"
-     :article "an"}
-
-    {:text "orangutan"
-     :article "an"}
-
-    {:text "otter"
-     :article "an"}
-
-    {:text "ox"
-     :article "an"}
-
-    {:text "panda"
-     :article "a"}
-
-    {:text "panther"
-     :article "a"}
-
-    {:text "parakeet"
-     :article "a"}
-
-    {:text "parrot"
-     :article "a"}
-
-    {:text "pig"
-     :article "a"}
-
-    {:text "pigeon"
-     :article "a"}
-
-    {:text "platypus"
-     :article "a"}
-
-    {:text "polar bear"
-     :article "a"}
-
-    {:text "porcupine"
-     :article "a"}
-
-    {:text "porpoise"
-     :article "a"}
-
-    {:text "prairie dog"
-     :article "a"}
-
-    {:text "puppy"
-     :article "a"
-     :sounds ["pants" "barks" "growls" "whimpers"]
-     :adjectives ["panting" "barking" "growling" "whimpering"]}
-
-    {:text "rabbit"
-     :article "a"}
-
-    {:text "raccoon"
-     :article "a"}
-
-    {:text "reindeer"
-     :article "a"}
-
-    {:text "rhinoceros"
-     :article "a"}
-
-    {:text "salamander"
-     :article "a"}
-
-    {:text "seal"
-     :article "a"}
-
-    {:text "serpent"
-     :article "a"}
-
-    {:text "sheep"
-     :article "a"}
-
-    {:text "shrew"
-     :article "a"}
-
-    {:text "skink"
-     :article "a"}
-
-    {:text "skunk"
-     :article "a"}
-
-    {:text "sloth"
-     :article "a"}
-
-    {:text "snake"
-     :article "a"}
-
-    {:text "squirrel"
-     :article "a"}
-
-    {:text "tiger"
-     :article "a"
-     :sounds ["roars"]
-     :adjectives ["roaring"]}
-
-    {:text "tortoise"
-     :article "a"}
-
-    {:text "turtle"
-     :article "a"}
-
-    {:text "walrus"
-     :article "a"}
-
-    {:text "warthog"
-     :article "a"}
-
-    {:text "weasel"
-     :article "a"}
-
-    {:text "wildcat"
-     :article "a"}
-
-    {:text "wolf"
-     :article "a"}
-
-    {:text "wombat"
-     :article "a"}
-
-    {:text "woodchuck"
-     :article "a"}
-
-    {:text "yak"
-     :article "a"}
-
-    {:text "zebra"
-     :article "a"}
-
-    ]})
-
 (def noises
   {:noises
-   [{:text "foghorn"
-     :article "a"}
+   [{:text ["foghorn"]
+     :options [{:modifiers {:config [:either]
+                            :prefix ["distant"]}
+                :articles ["a"]}]}
 
-    {:text "laughter"
-     :article "some"}
+    {:text ["explosion"]
+     :options [{:modifiers {:config [:either]
+                            :prefix ["distant"]}
+                :articles ["a"]}]}
 
-    {:text "laughing"
-     :article "somebody"}
+    {:text ["laughter"]
+     :options [{:modifiers {:config [:either]
+                            :prefix ["loud" "obnoxious" "high-pitched"
+                                     "sinister" "insane" "unnerving"
+                                     "child-like" "distant"]}
+                :articles ["some"]}
+               {:alternates ["laugh" "chuckle" "cackle"
+                             :modifiers {:config [:either]
+                                         :prefix ["a loud" "an obnoxious" "a sinister"
+                                                  "an insane" "unnerving"
+                                                  "child-like" "distant"]}]}]}
 
-    {:text "chuckling"
-     :article "someone"}
+    {:text ["laughing" "chuckling" "cackling"
+            "laugh" "chuckle" "cackle"]
+     :options [{:modifiers {:config [:either]
+                            :suffix ["loudly" "quietly" "obnoxiously"
+                                     "insanely"]}
+                :articles ["someone" "somebody"]}]}
 
-    {:text "cackling"
-     :article "someone"}
+    {:text ["choking"]
+     {:modifiers {:config [:both]
+                  :prefix ["loudly" "quietly"]
+                  :suffix ["to death"]}
+      :articles ["someone" "somebody"]}}
 
-    {:text "crying"
-     :article "someone"}
+    {:text ["crying"]
+     :options [{:modifiers {:config [:either]
+                            :suffix ["loudly" "quietly" "obnoxiously"]}
+                :articles ["someone" "somebody"]}
+               {:alternates ["weeping" "sobbing"]
+                :modifiers {:config [:either]
+                            :suffix ["loudly" "quietly"]}
+                :articles ["someone" "somebody"]}]}
 
-    {:text "sobbing"
-     :article "someone"}
+    {:text ["sneeze" "cough" "burp" "fart"]
+     :options [{:modifiers {:config [:either]
+                            :prefix ["loud" "wet" "quiet" "dainty" "manly"]}
+                :articles ["a"]}
+               {:modifiers {:config [:either]
+                            :suffix ["loudly" "quietly" "daintly"]}
+                :articles ["someone" "somebody"]}]}
 
-    {:text "sneeze"
-     :article "a"}
+    {:text ["sneezing" "coughing" "burping" "farting"]
+     :options [{:modifiers {:config [:either]
+                            :prefix ["loudly" "quietly" "repeatedly"]}
+                :articles ["someone" "somebody"]
+                :follow-ups
+                {:text ["while crying" "while running" "while eating"]}}]}
 
-    {:text "wolves howling"}
+    {:text ["wolves howling"]
+     :options [{:modifiers {:config [:either]
+                            :suffix ["in the distance" "under water"]}}]}
 
-    {:text "ice cream truck"
-     :article "an"}
+    {:text ["ice cream truck" "ambulance"]
+     :options [{:articles ["an"]}]}
 
-    {:text "door slam"
-     :article "a"}
+    {:text ["fire truck"]
+     :options [{:articles ["a"]}]}
 
-    {:text "sinister chuckle"
-     :article "a"}]})
+    {:text ["phone ringing"]
+     :options [{:articles ["a" "the"]}]}
+
+    {:text ["bell tower"]
+     :options [{:articles ["a"]}]}
+
+    {:text ["door slam"]
+     :options [{:articles ["a"]}]}
 
 (def disasters
   {:disasters
-   [{:text "fire"
-     :article "a"}
+   [
+    {:text ["fire" "tornado" "flood" "tsunami" "landslide"
+            "radioactive leak" "lava flow" "sandstorm" "lightning strike"
+            "plague of locusts" "snowstorm" "duststorm"]
+     :options {:articles ["a"]}}
 
-    {:text "tornado"
-     :article "a"}
-
-    {:text "hurricane"
-     :article "a"}
-
-    {:text "flood"
-     :article "a"}
-
-    {:text "tsunami"
-     :article "a"}
-
-    {:text "landslide"
-     :article "a"}
-
-    {:text "avalanche"
-     :article "an"}
-
-    {:text "radioactive leak"
-     :article "a"}
-
-    {:text "lava flow"
-     :article "a"}
-
-    {:text "sandstorm"
-     :article "a"}
-
-    {:text "lightning strike"
-     :article "a"}
-
-    {:text "plague of locusts"
-     :article "a"}
-
-    {:text "snowstorm"
-     :article "a"}
-
-    {:text "duststorm"
-     :article "a"}]})
+    {:text ["avalanche"]
+     :options {:articles ["an"]}}]})
 
 (def obstacles
   {:obstacles
