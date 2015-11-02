@@ -1,27 +1,28 @@
 (ns xyzzwhy-corpora.games)
 
 (def games
-  {:games
-   [{:text "Agricola"
-     :kind :tabletop}
+  [
+   {:text "Agricola"
+    :qualifier :tabletop}
 
-    {:text "Advanced Squad Leader"
-     :kind :tabletop}
+   {:text "Advanced Squad Leader"
+    :qualifier :tabletop}
 
-    {:text "Carcassonne"
-     :kind :tabletop}
+   {:text "Carcassonne"
+    :qualifier :tabletop}
 
-    {:text "World in Flames"
-     :kind :tabletop}
+   {:text "World in Flames"
+    :qualifier :tabletop}
 
-    {:text "Monopoly"
-     :kind :tabletop}
+   {:text "Monopoly"
+    :qualifier :tabletop}
 
-    {:text "World of Warcraft"
-     :kind :video}
+   {:text "World of Warcraft"
+    :qualifier :video}
 
-    {:text "Civilization V"
-     :kind :video}
+   {:text "Civilization V"
+    :qualifier :video}
 
-    {:text "Grand Theft Auto V"
-     :kind :video}]})
+   {:text "Grand Theft Auto V"
+    :qualifier :video}
+   ])
