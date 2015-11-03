@@ -1843,34 +1843,6 @@
     {:text "apple cinnamon Pop Tart"
      :article "an"}]})
 
-(def drinks
-  {:drinks
-   [{:text "steaming gravy"
-     :article "a cup of"}
-
-    {:text "milk"
-     :article "a gallon of"}
-
-    {:text "orange juice"
-     :article "a glass of"}
-
-    {:text "tea"
-     :article "some"}
-
-    {:text "soda"
-     :article "some"}
-
-    {:text "water"
-     :article "some"}
-
-    {:text "beef broth"
-     :article "some"}
-
-    {:text "scotch"
-     :article "a"}]})
-
-
-
 
 
 (def classes
