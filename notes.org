@@ -11,6 +11,7 @@ If present, supercedes the prefix-article function.
 *** :modifier
 **** :config :EITHER/:both
 **** :ambifix/:prefix/:suffix
+***** :optional? TRUE/false
 ***** :multiple? true/FALSE/#
 If #, allows that many repetitions
 ***** :option
