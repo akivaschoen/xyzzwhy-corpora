@@ -8,6 +8,7 @@ If present, supercedes the prefix-article function.
 *** :sub
 **** :class
 **** :config
+*** :preps
 *** :modifier
 **** :config :EITHER/:both
 **** :ambifix/:prefix/:suffix
