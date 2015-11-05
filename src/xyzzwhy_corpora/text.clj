@@ -1760,9 +1760,6 @@
     ]})
 
 
-
-
-
 (def classes
   ["events"
    "location-events"
