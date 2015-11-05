@@ -1430,54 +1430,6 @@
     {:text "The Hitchhiker's Guide to the Galaxy"
      :preps ["a copy of"]}]})
 
-(def attacks
-  {:attacks
-   [{:text "%0"
-     :subs {0 {:class :actor}}}
-    {:text "%0"
-     :subs {0 {:class :item}}}
-    {:text "a judo chop"}
-    {:text "a Judeo chop"}
-    {:text "a filthy soap slap"}
-    {:text "a rough kitty lick"}
-    {:text "a high clownkick"}
-    {:text "a sad testicle tug"}
-    {:text "a sushi pants special"}
-    {:text "a rub cut"}
-    {:text "a rusty trombone"}
-    {:text "an antiparticle dildo"}
-    {:text "a Cleveland steamer"}
-    {:text "a wet hug"}
-    {:text "a prison hug"}
-    {:text "a reverse hug"}
-    {:text "Canadian disapproval"}
-    {:text "a dangling participle"}
-    {:text "a fancy uppercut"}
-    {:text "a flurry of tiny kisses"}
-    {:text "a forlorn sigh"}
-    {:text "a balloon"}
-    {:text "a spontaneous coma"}
-    {:text "a smug kidney punch"}
-    {:text "a bit of the ol' in-out"}
-    {:text "a atomic wedge"}
-    {:text "Vogon poetry"}
-    {:text "a bad British accent"}
-    {:text "poor grammar"}
-    {:text "Conservative politics"}
-    {:text "Liberal politics"}
-    {:text "secret.jpg"}
-    {:text "tubgirl.jpg"}
-    {:text "cute kittens"}
-    {:text "tumbly puppies"}
-    {:text "a weaponized beard"}
-    {:text "an apathetic hipster"}]})
-
-
-
-
-
-
-
 
 
 (def classes
