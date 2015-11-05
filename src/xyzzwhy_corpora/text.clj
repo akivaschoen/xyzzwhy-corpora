@@ -1374,31 +1374,6 @@
      :subs {0 {:class :person}}}
     {:text "I wonder if I could forge us a Group 6 Access..."}]})
 
-(def intonations
-  {:intonations
-   [{:text "Toast goes in the toaster."}
-    {:text "These pretzels are making me thirsty."}
-    {:text "For those who can make the journey, there is a place."}
-    {:text "Slightly uncomfortable pleasures."}
-    {:text "It is a winning cake."}
-    {:text "POKE 1024,0."}
-    {:text "Coitus?"}
-    {:text "Pave Canada."}
-    {:text "Your pilikia is all pau."}
-    {:text "The owls are not what they seem."}
-    {:text "Plugh."}
-    {:text "Zzyzx."}
-    {:text "Guch."}
-    {:text "Spigot."}
-    {:text "You sank my battleship."}
-    {:text "Sorry, but it couldn't be helped."}
-    {:text "Clean up in aisle 8A."}
-    {:text "Rabbit feces."}
-    {:text "Don't panic."}
-    {:text "Don't panic. Oh, all right. You can panic a little bit."}
-    {:text "Consider deeply the baked ham."}
-    {:text "You can't go up against city hall."}]})
-
 
 
 (def classes
