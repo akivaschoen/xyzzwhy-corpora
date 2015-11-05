@@ -1399,17 +1399,6 @@
     {:text "Consider deeply the baked ham."}
     {:text "You can't go up against city hall."}]})
 
-(def signs
-  {:signs
-   [{:text "Burma shave!"}
-    {:text "It's time to pay the price."}
-    {:text "You can't go up against city hall."}
-    {:text "For those who can make the journey, there is a place."}
-    {:text "Here lies Hammerdog, a dog made of hammers."}
-    {:text "Here lies Knifekitten, a kitten made of knives."}
-    {:text "When you're not reading this, it's written in Spanish."}
-    {:text "Now you know how hard it is to say \"Irish wristwatch\"."}]})
-
 
 
 (def classes
