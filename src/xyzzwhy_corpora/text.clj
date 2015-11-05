@@ -1359,21 +1359,6 @@
     {:text "yells, 'I warned you about stairs, bro! I told ya, dawg!'"}
     ]})
 
-(def thoughts
-  {:thoughts
-   [{:text "Why don't they put mayo in the can with the tuna?"}
-    {:text "%0 never has a second cup of coffee at home..."
-     :subs {0 {:class :person}}}
-    {:text "You can't go up against city hall."}
-    {:text "I've made a huge mistake."}
-    {:text "It's time to pay the price."}
-    {:text "Why don't they have Double Stuf Nutter Butters?"}
-    {:text "This'll all end in tears."}
-    {:text "Hey! But I didn't eat the mousse!"}
-    {:text "%0 still owes me a backrub."
-     :subs {0 {:class :person}}}
-    {:text "I wonder if I could forge us a Group 6 Access..."}]})
-
 
 
 (def classes
