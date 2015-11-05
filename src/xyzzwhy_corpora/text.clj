@@ -1410,26 +1410,6 @@
     {:text "When you're not reading this, it's written in Spanish."}
     {:text "Now you know how hard it is to say \"Irish wristwatch\"."}]})
 
-(def books
-  {:books
-   [{:text "the Bible"
-     :preps ["a copy of"]}
-
-    {:text "Catcher in the Rye"
-     :preps ["a copy of"]}
-
-    {:text "Infinite Jest"
-     :preps ["a copy of"]}
-
-    {:text "Gravity's Rainbow"
-     :preps ["a copy of"]}
-
-    {:text "A Prayer for Owen Meany"
-     :preps ["a copy of"]}
-
-    {:text "The Hitchhiker's Guide to the Galaxy"
-     :preps ["a copy of"]}]})
-
 
 
 (def classes
