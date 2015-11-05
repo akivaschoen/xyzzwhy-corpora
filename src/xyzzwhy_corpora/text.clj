@@ -788,62 +788,7 @@
     {:text "You have died."}
     {:text "You are starting to feel hungry."}]})
 
-(def actor-actions
-  {:actor-actions
-   [{:text "looking %0."
-     :subs {0 {:class :adjective}}}
 
-    {:text "being chased by a swarm of balloon animals."}
-
-    {:text "being chased by %0."
-     :subs {0 {:class :person}}}
-
-    {:text "being chased by %0 which is attached to them by a string."
-     :subs {0 {:class :item}}}
-
-    {:text "dancing furiously."}
-    {:text "dancing extremely slowly."}
-    {:text "shouting at an imaginary helicopter."}
-    {:text "doing the Kenosha Kid."}
-
-    {:text "thinking %0 about %1."
-     :subs {0 {:class :adverb}
-            1 {:class :actor}}}
-
-    {:text "being chased around by a bee."}
-    {:text "defiantly eating Scrabble tiles, one by one."}
-
-    {:text "%0 playing the organ."
-     :subs {0 {:class :adverb}}}
-
-    {:text "organizing matches."}
-    {:text "having a Guru Meditation Error."}
-    {:text "juggling some balls."}
-    {:text "dancing in a little circle."}
-    {:text "stooping up and down like a rapper in concert."}
-    {:text "drooling uncontrollably."}
-    {:text "clutching a DVD of Dot & the Kangaroo."}
-    {:text "clutching a DVD of BMX Bandits."}
-    {:text "wearing an eyepatch."}
-    {:text "wearing two eyepatches and stumbling around blindly."}
-    {:text "hiding under a table."}
-    {:text "hiding under a sofa."}
-    {:text "hiding in the bushes."}
-
-    {:text "munching on %0."
-     :subs {0 {:class :food}}}
-
-    {:text "pretending to be invisible."}
-    {:text "having a coughing fit."}
-    {:text "having a sneezing fit."}
-
-    {:text "being menaced by %0."
-     :subs {0 {:class :animal}}}
-
-    {:text "ready to start some shit."}
-
-    {:text "examining %0 with great confusion."
-     :subs {0 {:class :item}}}]})
 
 (def locations
   {:locations
@@ -1281,8 +1226,6 @@
                             {:text "They stare at you and begin to crowl."}
                             {:text "They're all covered with cuts and bruises."}
                             {:text "They're currently scrumming over a Bible."}]}}]})
-
-
 
 (def classes
   ["events"
