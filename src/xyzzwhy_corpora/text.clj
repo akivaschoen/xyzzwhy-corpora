@@ -1472,16 +1472,7 @@
     {:text "a weaponized beard"}
     {:text "an apathetic hipster"}]})
 
-(def directions
-  {:directions
-   [{:text "north"}
-    {:text "northeast"}
-    {:text "east"}
-    {:text "southeast"}
-    {:text "south"}
-    {:text "southwest"}
-    {:text "west"}
-    {:text "northwest"}]})
+
 
 
 
