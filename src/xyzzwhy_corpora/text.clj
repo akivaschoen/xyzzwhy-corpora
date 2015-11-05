@@ -1701,63 +1701,9 @@
     {:text "vexed"}
     ]})
 
-(def adverbs
-  {:adverbs
-   [
-    {:text "balefully"}
-    {:text "bravely"}
-    {:text "carefully"}
-    {:text "happily"}
-    {:text "lustfully"}
-    {:text "mournfully"}
-    {:text "proudly"}
-    {:text "sadly"}
-    {:text "solemnly"}
-    {:text "uncertainly"}
-    {:text "warily"}
-    {:text "willfully"}
-    {:text "wistfully"}
-    ]})
 
-(def scents
-  {:scents
-   [
-    {:text "acrid"}
-    {:text "bitter"}
-    {:text "foul"}
-    {:text "gross"}
-    {:text "of feet"}
-    {:text "of your grandfather's hair cream"}
-    {:text "of warm peanut butter"}
-    {:text "pleasant"}
-    {:text "nice"}
-    {:text "rotten"}
-    {:text "sweet"}
-    {:text "sour"}
-    {:text "smoky"}
-    ]})
 
-(def diagnoses
-  {:diagnoses
-   [
-    {:text "absurdly sticky"}
-    {:text "drunk"}
-    {:text "confused"}
-    {:text "covered in bees"}
-    {:text "feeling great"}
-    {:text "feeling gross"}
-    {:text "heavily wounded"}
-    {:text "hungry"}
-    {:text "lightly wounded"}
-    {:text "moderately wounded"}
-    {:text "near death"}
-    {:text "sleepy"}
-    {:text "spaghettified"}
-    {:text "stoned"}
-    {:text "temporarily blind"}
-    {:text "temporarily deaf"}
-    {:text "thirsty"}
-    ]})
+
 
 
 (def classes
