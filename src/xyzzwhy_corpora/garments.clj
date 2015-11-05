@@ -3,6 +3,8 @@
 (def garments
   [
    {:text "belt"}
+   {:text "clown suit"
+    :modifier {:prefix {:option "heirloom"}}}
    {:text "coat"}
    {:text "dress"}
    {:text "gloves"}
