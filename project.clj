@@ -5,8 +5,8 @@
             :url "http://www.gnu.org/licenses/gpl.html"}
 
   :dependencies
-  [[org.clojure/clojure "1.7.0"]
-   [com.novemberain/monger "3.0.1"]
+  [[org.clojure/clojure "1.8.0"]
+   [com.apa512/rethinkdb "0.11.0"]
    [environ "1.0.1"]]
 
   :plugins
