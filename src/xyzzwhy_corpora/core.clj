@@ -1,33 +1,40 @@
 (ns xyzzwhy-corpora.core
-  (:require [environ.core :refer [env]]
-            [monger.core :as mg]))
+  (:require [clojure.string :as str]
+            [environ.core :refer [env]]
+            [rethinkdb.query :as r]))
 
-(def ^:private corpus {})
-(defonce db (atom nil))
+(defonce db-name "xyzzwhy_corpora")
 
-(defn initialize-db-connection!
-  [& {:keys [uri]}]
-  (reset! db (:db (mg/connect-via-uri (or uri (env :corpora-database-uri))))))
+(defn ->table-name
+  [classname]
+  (-> classname
+      name
+      str
+      (str/replace "-" "_")))
 
-(defn- pluralize
-  [c]
-  (let [c' (name c)]
-    (if (.endsWith c' "s")
-      c'
-      (str c' "s"))))
+(defn create-database
+  []
+  (with-open [conn (r/connect)]
+    (r/run (r/db-create db-name) conn)))
 
-(defn- initialize-corpus-from-namespace
-  [c n]
-  (reduce #(conj %1 @(-> (ns-resolve n (symbol %2)) deref future))
-          c
-          (-> (ns-resolve n 'classes) deref)))
+(defn create-class
+  [classname]
+  ;;(with-open [conn (r/connect (env :xyzzwhy-corpora-db))]
+  (with-open [conn (r/connect)]
+    (-> (r/db db-name)
+        (r/table-create (->table-name classname))
+        (r/run conn))))
 
-(defn- get-class
-  [c]
-  (-> c pluralize keyword corpus))
+(defn add-fragments
+  [classname fragments]
+  ;;(with-open [conn (r/connect (env :xyzzwhy-corpora-db))]
+  (with-open [conn (r/connect)]
+    (-> (r/db db-name)
+        (r/table (->table-name classname))
+        (r/insert fragments)
+        (r/run conn))))
 
 (defn -main
   [& args]
-  (initialize-db-connection!)
 
   )
