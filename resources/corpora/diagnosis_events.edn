@@ -1,0 +1,3 @@
+{:classname "diagnosis_events"
+ :fragments [{:text "You check your health: you are %0."
+              :sub {0 {:class :diagnose}}}]}

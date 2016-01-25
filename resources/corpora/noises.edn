@@ -1,0 +1,92 @@
+{:classname "noises"
+ :fragments [[{:text "explosion"
+               :article "an"
+               :modifier {:prefix {:option [{:text "distant"
+                                             :article "a"}]}
+                          :suffix {:option [{:text "in the distance"}]}}}
+              {:text "explosions"
+               :article "some"
+               :modifier {:prefix {:option [{:text "distant"}]}
+                          :suffix {:option [{:text "in the distance"}]}}}]
+             {:text "foghorn"
+              :article "a"
+              :modifier {:config :both
+                         :prefix {:option [{:text "distant"}
+                                           {:text "lonely"}]}
+                         :suffix {:option [{:text "in the distance"}]}}}
+             [{:text "laughter"
+               :article "some"
+               :modifier {:prefix {:option [{:text ["child-like"
+                                                    "distant"
+                                                    "high-pitched"
+                                                    "insane"
+                                                    "loud"
+                                                    "obnoxious"
+                                                    "quiet"
+                                                    "sinister"
+                                                    "unnerving"]}]}}}
+              {:text ["cackle" "chuckle" "laugh"]
+               :article ["a"]
+               :modifier {:prefix {:option [{:text ["child-like"
+                                                    "distant"
+                                                    "loud"
+                                                    "sinister"]
+                                             :article "a"}
+                                            {:text ["insane"
+                                                    "obnoxious"
+                                                    "unnerving"]
+                                             :article "an"}]}}}
+              {:text ["cackling" "chuckling" "laughing"]
+               :article ["someone" "somebody"]
+               :modifier {:suffix {:option {:text ["insanely"
+                                                   "loudly"
+                                                   "insanely"
+                                                   "nearby"
+                                                   "obnoxiously"
+                                                   "quietly"]}}}}]
+             {:text ["choking"]
+              :modifier {:config :both
+                         :prefix ["loudly" "quietly"]
+                         :suffix ["to death"]}
+              :articles ["someone" "somebody"]}
+             {:text ["crying"]
+              :modifier {:suffix ["loudly" "quietly" "obnoxiously"]}
+              :article ["someone" "somebody"]
+              {:alternates ["weeping" "sobbing"]
+               :modifiers {:config [:either]
+                           :suffix ["loudly" "quietly"]}
+               :articles ["someone" "somebody"]}}
+
+             {:text ["sneeze" "cough" "burp" "fart"]
+              :options [{:modifiers {:config [:either]
+                                     :prefix ["loud" "wet" "quiet" "dainty" "manly"]}
+                         :articles ["a"]}
+                        {:modifiers {:config [:either]
+                                     :suffix ["loudly" "quietly" "daintly"]}
+                         :articles ["someone" "somebody"]}]}
+
+             {:text ["sneezing" "coughing" "burping" "farting"]
+              :options [{:modifiers {:config [:either]
+                                     :prefix ["loudly" "quietly" "repeatedly"]}
+                         :articles ["someone" "somebody"]
+                         :follow-ups
+                         {:text ["while crying" "while running" "while eating"]}}]}
+
+             {:text ["wolves howling"]
+              :options [{:modifiers {:config [:either]
+                                     :suffix ["in the distance" "under water"]}}]}
+
+             {:text ["ice cream truck" "ambulance"]
+              :options [{:articles ["an"]}]}
+
+             {:text ["fire truck"]
+              :options [{:articles ["a"]}]}
+
+             {:text ["phone ringing"]
+              :options [{:articles ["a" "the"]}]}
+
+             {:text ["bell tower"]
+              :options [{:articles ["a"]}]}
+
+             {:text ["door slam"]
+              :options [{:articles ["a"]}]}]}
