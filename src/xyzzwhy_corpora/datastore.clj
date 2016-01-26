@@ -6,60 +6,62 @@
 
 (defonce db-name "xyzzwhy_corpora")
 
-
-;;
-;; Datastore Functions
-;;
 (defn- ->table-name
-  [classmap]
-  (-> classmap
-      :classname
+  [c]
+  (-> (if (map? c)
+        (:classname c)
+        c)
       name
       str
       (str/replace "-" "_")))
 
 (defn- add-fragments
-  [classmap]
+  [c]
   ;;(with-open [conn (r/connect (env :xyzzwhy-corpora-db))]
   (with-open [conn (r/connect)]
     (-> (r/db db-name)
-        (r/table (->table-name classmap))
+        (r/table (->table-name c))
         (r/insert (:fragments classmap))
         (r/run conn))))
 
-(declare list-classes) ;; Unsure if this is idomatic
-(defn- class-exists?
-  [classmap]
-  (some (partial = (:classname classmap)) (list-classes)))
+;; Existing in a pre-macro state (probably)
+(defn- class-action
+  [dsfn classmap]
+  ((fn []
+     (with-open [conn (r/connect)]
+       (let [results (-> (r/db db-name)
+                         (dsfn (->table-name classmap))
+                         (r/run conn))]
+         (println results)
+         classmap)))))
+
+(defn- class-query
+  [dsfn]
+  ((fn []
+     (with-open [conn (r/connect)]
+       (-> (r/db db-name)
+           dsfn
+           (r/run conn))))))
 
 (defn- create-database
   []
   (with-open [conn (r/connect)]
     (r/run (r/db-create db-name) conn)))
 
-(defn- create-class
-  [classmap]
-  ;;(with-open [conn (r/connect (env :xyzzwhy-corpora-db))]
-  (with-open [conn (r/connect)]
-    (-> (r/db db-name)
-        (r/table-create (->table-name classmap))
-        (r/run conn)))
-  classmap)
+(defn- add-class
+  [c]
+  (class-action r/table-create c))
 
 (defn- delete-class
-  [classmap]
-  (when (class-exists? classmap)
-    (with-open [conn (r/connect)]
-      (-> (r/db db-name)
-          (r/table-drop (->table-name classmap))
-          (r/run conn))))
-  classmap)
+  [c]
+  (class-action r/table-drop c))
 
 (defn- list-classes
   []
-  (with-open [conn (r/connect)]
-    (-> (r/db db-name)
-        (r/table-list)
-        (r/run conn))))
+  (class-query r/table-list))
+
+(defn- class-exists?
+  [classmap]
+  (some (partial = (:classname classmap)) (list-classes)))
 
 (def reset-class (comp add-fragments create-class delete-class io/read-class-file))
