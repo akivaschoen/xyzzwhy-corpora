@@ -6,8 +6,7 @@
 
   :dependencies
   [[org.clojure/clojure "1.8.0"]
-   [com.apa512/rethinkdb "0.11.0"]
-   [environ "1.0.1"]]
+   [xyzzwhy/datastore "1.0.0-SNAPSHOT"]]
 
   :plugins
   [[lein-environ "1.0.1"]]
