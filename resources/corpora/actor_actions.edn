@@ -1,4 +1,5 @@
 {:classname "actor_actions"
+ :type :sub
  :fragments [{:text "attacks"}
              {:text "examines"}
              {:text "flirts with"}

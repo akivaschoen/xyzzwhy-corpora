@@ -1,4 +1,5 @@
 {:classname "actor_events"
+ :type :event
  :fragments [{:text "%0 %1 %2."
               :sub {0 {:class :actor}
                     1 {:class :actor-action}

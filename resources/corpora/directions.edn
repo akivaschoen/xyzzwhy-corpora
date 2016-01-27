@@ -1,4 +1,5 @@
 {:classname "directions"
+ :type :event
  :fragments [{:text "north"}
              {:text "northeast"}
              {:text "east"}

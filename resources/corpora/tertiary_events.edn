@@ -1,4 +1,5 @@
 {:classname "tertiary_events"
+ :sub :event
  :fragments [{:text "A basketball bounces by."}
              {:text "A cool breeze blows by."}
              {:text "A warm breeze blows by."}

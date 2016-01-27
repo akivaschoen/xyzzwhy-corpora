@@ -1,4 +1,5 @@
 {:classname "dialogues"
+ :type :sub
  :fragments [{:text "asks, 'Are you following me?'"}
              {:text "asks, 'Can I have a hug?'"}
              {:text "asks, 'Does it smell like %3 in here to you?'"

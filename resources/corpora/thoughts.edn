@@ -1,4 +1,5 @@
 {:classname "thoughts"
+ :type :sub
  :fragments [{:text "%0 still owes me a backrub."
               :sub {0 {:class :person}}}
              {:text "%0 never has a second cup of coffee at home..."

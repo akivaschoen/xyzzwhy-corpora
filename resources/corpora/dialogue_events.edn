@@ -1,4 +1,5 @@
 {:classname "dialogue_events"
+ :type :event
  :fragments [{:text "%0 %1"
               :sub {0 {:class :person}
                     1 {:class :dialogue}}}

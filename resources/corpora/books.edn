@@ -1,18 +1,14 @@
 {:classname "books"
+ :type :sub
  :fragments [{:text "the Bible"
               :prep "a copy of"}
-
              {:text "Catcher in the Rye"
               :prep "a copy of"}
-
              {:text "Gravity's Rainbow"
               :prep "a copy of"}
-
              {:text "The Hitchhiker's Guide to the Galaxy"
               :prep "a copy of"}
-
              {:text "Infinite Jest"
               :prep "a copy of"}
-
              {:text "A Prayer for Owen Meany"
               :prep "a copy of"}]}

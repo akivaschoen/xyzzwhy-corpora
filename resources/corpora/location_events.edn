@@ -1,4 +1,5 @@
 {:classname "location_events"
+ :type :event
  :fragments [{:text "%0 prevents you from going %1 to %2."
               :sub {0 {:class :obstacle}
                     1 {:class :direction}

@@ -1,4 +1,5 @@
 {:classname "adverbs"
+ :type :sub
  :fragments [{:text "balefully"}
              {:text "bravely"}
              {:text "carefully"}

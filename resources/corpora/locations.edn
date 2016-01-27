@@ -1,4 +1,5 @@
 {:classname "locations"
+ :type :sub
  :fragments [{:text "airplane"
               :type :interior
               :prep "in"

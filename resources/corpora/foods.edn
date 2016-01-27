@@ -1,4 +1,5 @@
 {:classname "foods"
+ :type :sub
  :fragments [{:text "apple pocket"}
              {:text "block of cheese"}
              {:text "bobka"

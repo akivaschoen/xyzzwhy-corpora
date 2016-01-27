@@ -1,4 +1,5 @@
 {:classname "drinks"
+ :type :sub
  :fragments [{:text "gravy"
               :article "a cup of"
               :modifier {:prefix {:optional? false

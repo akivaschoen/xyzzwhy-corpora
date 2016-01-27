@@ -1,4 +1,5 @@
 {:classname "attacks"
+ :type :sub
  :fragments [{:text "%4"
               :sub {4 {:class :item}}}
              {:text "an antiparticle dildo"}

@@ -1,4 +1,5 @@
 {:classname "signs"
+ :type :sub
  :fragments [{:text "Burma shave!"}
              {:text "For those who can make the journey, there is a place."}
              {:text "Here lies Hammerdog, a dog made of hammers."}

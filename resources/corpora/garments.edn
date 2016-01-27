@@ -1,4 +1,5 @@
 {:classname "garments"
+ :type :sub
  :fragments [{:text "belt"}
              {:text "clown suit"
               :modifier {:prefix {:option "heirloom"}}}

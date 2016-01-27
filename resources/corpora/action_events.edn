@@ -1,4 +1,5 @@
 {:classname "action_events"
+ :type :event
  :fragments [{:text "An overhead loudspeaker crackles to life"
               :follow-up {:optional? false
                           :option [{:text ", 'Citizen! Report immediately to the nearest oddly-angled inner tube.'"}

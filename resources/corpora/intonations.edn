@@ -1,4 +1,5 @@
 {:classname "intonations"
+ :type :sub
  :fragments [{:text "Clean up in aisle 8A."}
              {:text "Coitus?"}
              {:text "Consider deeply the baked ham."}

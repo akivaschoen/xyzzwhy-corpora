@@ -1,4 +1,5 @@
 {:classname "obstacles"
+ :type :sub
  :fragments [{:text "a black comb on the ground"}
              {:text "a stack of dogs going all the way to the moon"}
              {:text "Steve Buscemi's grin"}

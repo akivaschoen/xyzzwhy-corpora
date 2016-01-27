@@ -1,4 +1,5 @@
 {:classname "scents"
+ :type :sub
  :fragments [{:text "acrid"}
              {:text "bitter"}
              {:text "foul"}

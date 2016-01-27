@@ -1,4 +1,5 @@
 {:classname "items"
+ :type :sub
  :fragments [{:text "0%"
               :article ["a Laserdisc copy of" "a VHS cassette of" "a Betamax of"]
               :sub {0 {:class :movies}}}

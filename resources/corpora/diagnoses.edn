@@ -1,4 +1,5 @@
 {:classname "diagnoses"
+ :type :sub
  :fragments [{:text "absurdly sticky"}
              {:text "affable"}
              {:text "confused"}

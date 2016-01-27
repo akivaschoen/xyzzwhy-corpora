@@ -1,4 +1,5 @@
 {:classname "actor_activities"
+ :type :sub
  :fragments [{:text "%3 playing the organ."
               :sub {3 {:class :adverb}}}
              {:text "being chased around by a %3."

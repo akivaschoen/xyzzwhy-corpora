@@ -1,4 +1,5 @@
 {:classname "persons"
+ :type :sub
  :fragments [{:text "Justin Bieber"
               :gender :male}
              {:text "Lloyd Braun"

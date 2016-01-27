@@ -1,4 +1,5 @@
 {:classname "noises"
+ :type :sub
  :fragments [[{:text "explosion"
                :article "an"
                :modifier {:prefix {:option [{:text "distant"

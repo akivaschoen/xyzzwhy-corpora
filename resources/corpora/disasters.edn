@@ -1,4 +1,5 @@
 {:classname "disasters"
+ :type :sub
  :fragments [{:text "avalanche"}
              {:text "duststorm"}
              {:text "fire"}

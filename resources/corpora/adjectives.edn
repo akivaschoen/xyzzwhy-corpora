@@ -1,4 +1,5 @@
 {:classname "adjectives"
+ :type :sub
  :fragments [{:text "afraid"}
              {:text "angry"}
              {:text "aroused"}

@@ -1,4 +1,5 @@
 {:classname "thought_events"
+ :type :event
  :fragments [{:text "You pause and think, '%0'"
               :sub {0 {:class :thought}}}
              {:text "A thought bubble appears above %0's head: '%1'"
