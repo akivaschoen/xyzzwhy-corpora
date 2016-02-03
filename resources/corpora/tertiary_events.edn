@@ -6,7 +6,7 @@
             {:text "It starts to rain."}
             {:text "It starts to snow."}
             {:text "Somehow, you've lost your %0."
-             :sub {0 {:class :garment :config [:no-article]}}}
+             :sub {0 {:class :garment :config #{:no-article}}}}
             {:text "Someone is having fun against their will nearby."}
             {:text "Someone is struggling with warped Tupperware nearby."}
             {:text "Someone nearby is repeatedly zipping and unzipping a duffel bag."}

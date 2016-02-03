@@ -10,7 +10,7 @@
                                                      "fruit" "orange"]}]}}}
             {:text "milk"
              :article "a gallon of"
-             :decorator {:prefix {:config [:optional]
+             :decorator {:prefix {:config #{:optional}
                                   :fragment [{:text ["almond" "boiling"
                                                      "breast" "rancid" "raw" "skim"
                                                      "soy" "spoiled" "whole"]}]}}}

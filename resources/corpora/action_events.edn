@@ -58,14 +58,14 @@
                                     {:text "An announcer shouts, 'They found rice on Mars!'"}
                                     {:text "A news report is on about %0 %1."
                                      :sub {0 {:class :disaster}
-                                           1 {:class :location :config [:no-prep]}}}
+                                           1 {:class :location :config #{:no-prep}}}}
                                     {:text "%0 solemnly '%1'"}]}}
             {:text "You awake from a nightmare. You saw yourself %0. The corpse of %1 was there, holding %2."
              :sub {0 {:class :location}
-                   1 {:class :person :config [:no-groups]}
+                   1 {:class :person :config #{:no-groups}}
                    2 {:class :item}}}
             {:text "You check your inventory. "
-             :follow-up {:config [:optional]
+             :follow-up {:config #{:optional}
                          :fragment [{:text "You are empty-handed."}
                                     {:text "You are carrying %0."
                                      :sub {0 {:class :item}}}
@@ -78,17 +78,17 @@
                                            2 {:class :item}}}]}}
             {:text "You eat %0. "
              :sub {0 {:class :food}}
-             :follow-up {:config [:optional]
+             :follow-up {:config #{:optional}
                          :fragment [{:text "%1 looks on %2."
                                      :sub {1 {:class :actor}
                                            2 {:class :adverb}}}]}}
             {:text "You get tired of waiting for "
              :follow-up {:fragment [{:text "your Uber and decide to walk to %0 instead."
-                                     :sub {0 {:class :location :config [:no-prep]}}}
+                                     :sub {0 {:class :location :config #{:no-prep}}}}
                                     {:text "your private jet so you decide to walk to %0 instead."
-                                     :sub {0 {:class :location :config [:no-prep]}}}
+                                     :sub {0 {:class :location :config #{:no-prep}}}}
                                     {:text "the all-you-can-eat-buffet to open so you walk to %0 instead."
-                                     :sub {0 {:class :location :config [:no-prep]}}}]}}
+                                     :sub {0 {:class :location :config #{:no-prep}}}}]}}
             {:text "You feel a little famished so you eat %0."
              :sub {0 {:class :food}}}
             {:text "You find yourself being slowly teleported away. Very slowly. People are beginning to stare."}
@@ -98,7 +98,7 @@
                                     {:text "Someone has left a recipe for beef stew inside."}
                                     {:text "You read a bit before tossing it over your shoulder and then doing the electric slide."}]}}
             {:text "You peek out the window. "
-             :follow-up {:config [:optional]
+             :follow-up {:config #{:optional}
                          :fragment [{:text "%0 is messing around with your mailbox. You crouch in fear."
                                      :sub {0 {:class :person}}}
                                     {:text "%0 is laying facedown in your flowerbed. You sink to your knees with worry."
@@ -143,4 +143,4 @@
                        :case :subjective}
                     2 {:class :item}}}
              {:text "You take a sip of %0."
-              :sub {0 {:class :drink :config [:no-article]}}}]}
+              :sub {0 {:class :drink :config #{:no-article}}}}]}
