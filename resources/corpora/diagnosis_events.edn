@@ -1,6 +1,6 @@
-{:classname "diagnosis_events"
+{:classname :diagnosis-event
  :type :event
- :fragments [{:text ["A doctor leans in from the shadows to inform you that you are %0."
-                     "You look into a nearby mirror and notice you are %0."
-                     "You check your health: you are %0."]
-              :sub {0 {:class :diagnose}}}]}
+ :fragment [{:text ["A doctor leans in from the shadows to inform you that you are %0."
+                    "You look into a nearby mirror and notice you are %0."
+                    "You check your health: you are %0."]
+             :sub {0 {:class :diagnosis}}}]}

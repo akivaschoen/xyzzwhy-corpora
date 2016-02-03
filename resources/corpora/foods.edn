@@ -1,28 +1,27 @@
-{:classname "foods"
+{:classname :food
  :type :sub
- :fragments [{:text "apple pocket"}
+ :fragment [{:text "apple pocket"}
              {:text "block of cheese"}
              {:text "bobka"
-              :modifier {:prefix {:optional? false
-                                  :option ["cinnamon" "chocolate" "Satanic"]}}}
+              :decorator {:prefix {:fragment [{:text ["cinnamon" "chocolate" "Satanic"]}]}}}
              {:text "bouquet of corndogs"}
              {:text "burger"
-              :modifier {:prefix {:option ["half-eaten" "tongue" "tooth"]}}}
+              :decorator {:prefix {:fragment [{:text ["half-eaten" "tongue" "tooth"]}]}}}
              {:text "burrito"}
              {:text "cake"
               :article ["a" "a slice of"]
-              :modifier {:prefix {:option ["birthday"]}}}
+              :decorator {:prefix {:fragment [{:text "birthday"}]}}}
              {:text ["Cheerios" "Rice Chex"]
               :article "a bowl of"}
              {:text "cheeseburger"
-              :modifier {:prefix {:option ["half-eaten" "bacon double"]}}}
+              :decorator {:prefix {:fragment [{:text ["half-eaten" "bacon double"]}]}}}
              {:text ["chips" "Doritos" "Fritos" "Funyons" "nacho chips"]
               :article "some"}
              {:text "delicious churro"}
              {:text "Cinnabon"}
              {:text "cornbread"
               :article "some"
-              :modifier {:prefix {:option "weaponized"}}}
+              :decorator {:prefix {:fragment [{:text "weaponized"}]}}}
              {:text "corndog"}
              {:text "duck confit"
               :article "some"}
@@ -32,16 +31,16 @@
              {:text "pasta"
               :article "some"}
              {:text "Pop Tart"
-              :modifier {:prefix {:option ["angst" "apple cinnamon" "blueberry" "Dutch apple"
-                                           "frosted feces" "nihilist" "snozzberry" "strawberry"]}}}
+              :decorator {:prefix {:fragment [{:text ["angst" "apple cinnamon" "blueberry" "Dutch apple"
+                                                      "frosted feces" "nihilist" "snozzberry" "strawberry"]}]}}}
              {:text "Reese's Peanut Butter Cup"
               :article "a"}
              {:text "uncooked rice"
               :article "some"}
              {:text "salad"
-              :modifier {:prefix {:option "big"}}}
+              :decorator {:prefix {:fragment [{:text "big"}]}}}
              {:text "sandwich"
-              :modifier {:prefix {:option ["ham" "persecution"]}}}
+              :decorator {:prefix {:fragment [{:text ["ham" "persecution"]}]}}}
              {:text "slice of fried spam"}
              {:text "sushi"
               :article "some"}
