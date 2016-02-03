@@ -1,10 +1,10 @@
-{:classname "directions"
- :type :event
- :fragments [{:text "north"}
-             {:text "northeast"}
-             {:text "east"}
-             {:text "southeast"}
-             {:text "south"}
-             {:text "southwest"}
-             {:text "west"}
-             {:text "northwest"}]}
+{:classname :direction
+ :type :sub
+ :fragment [{:text "north"}
+            {:text "northeast"}
+            {:text "east"}
+            {:text "southeast"}
+            {:text "south"}
+            {:text "southwest"}
+            {:text "west"}
+            {:text "northwest"}]}

@@ -1,19 +1,18 @@
-{:classname "dialogue_events"
+{:classname :dialogue-event
  :type :event
- :fragments [{:text "%0 %1"
-              :sub {0 {:class :person}
-                    1 {:class :dialogue}}}
-             {:text "0% is nearby. %1 %2"
-              :sub {0 {:class :person :config #{:no-groups}}
-                    1 {:ref 0
-                       :class :gender
-                       :case :subjective}
-                    2 {:class :dialogue}}}
-             {:text "%0 marches up to you and %1"
-              :sub {0 {:class :person}
-                    1 {:class :dialogue}}}
-             {:text "You check your messages:"
-              :follow-up {:optional? false
-                          :option [{:text "%0 %1"
-                                    :sub {0 {:class :person :config #{:no-groups}}
-                                          1 {:class :dialogue}}}]}}]}
+ :fragment [{:text "%0 %1"
+             :sub {0 {:class :person}
+                   1 {:class :dialogue}}}
+            {:text "0% is nearby. %1 %2"
+             :sub {0 {:class :person :config [:no-groups]}
+                   1 {:ref 0
+                      :class :gender
+                      :case :subjective}
+                   2 {:class :dialogue}}}
+            {:text "%0 marches up to you and %1"
+             :sub {0 {:class :person}
+                   1 {:class :dialogue}}}
+            {:text "You check your messages:"
+             :follow-up {:fragment [{:text "%0 %1"
+                                     :sub {0 {:class :person :config [:no-groups]}
+                                           1 {:class :dialogue}}}]}}]}
