@@ -7,7 +7,7 @@
              :article "can of"}
             {:text "books"
              :article "some"
-             :decorator {:prefix {:config #{:multiple}
+             :decorator {:prefix {:config [:multiple]
                                   :fragment [{:text ["children's" "dusty" "old" "pornographic" "rare"]}]}}}
             {:text ["baseball" "softball" "tennis ball"]
              :decorator {:prefix {:fragment [{:text ["huge" "oddly-shaped" "radioactive" "tiny"]}]}}}
@@ -43,7 +43,7 @@
             {:text "magic scroll"
              :follow-up {:fragment [{:text "It's a spell of %0."
                                      :sub {0 {:class :spell
-                                              :config #{:no-article}}}}]}}
+                                              :config [:no-article]}}}]}}
             {:text "movie ticket"
              :decorator {:prefix {:fragment {:text "old"}}}
              :follow-up {:fragment [{:text "It's already been torn."}

@@ -1,5 +1,6 @@
 {:classname :location
  :type :sub
+ :config [:article]
  :fragment [{:text "airplane"
              :type :interior
              :prep "in"
@@ -142,7 +143,7 @@
                                     {:text "There is an open grave nearby. It's empty."}
                                     {:text "There is an open grave nearby. There's a phone book in it."}
                                     {:text "There is an open grave nearby. It's full of %0."
-                                     :sub {0 {:class :drink :config #{:no-article}}}}
+                                     :sub {0 {:class :drink :config [:no-article]}}}
                                     {:text "There is an open grave nearby. It's full of molten peanut butter."}
                                     {:text "There are fresh footprints here."}
                                     {:text "A lazy mist drifts amongst the tombstones."}

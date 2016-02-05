@@ -1,5 +1,5 @@
 {:classname :game
- :config #{:no-article}
+ :config [:no-article]
  :fragment [{:text "Agricola"
              :qualifier :tabletop}
             {:text "Advanced Squad Leader"
