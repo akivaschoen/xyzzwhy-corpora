@@ -1,7 +1,7 @@
 {:classname :attack
  :type :sub
- :fragment [{:text "%0"
-             :sub {0 {:class :item}}}
+ :fragment [{:text "%10"
+             :sub [{:token 10 :class :item}]}
             {:text "an antiparticle dildo"}
             {:text "an apathetic hipster"}
             {:text "an atomic wedgie"}

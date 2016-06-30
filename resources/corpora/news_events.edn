@@ -2,4 +2,4 @@
  :type :event
  :fragment [{:text ["You read morning paper: '%0'."
                     "You turn on the radio and hear a news broadcast: '%0'."]
-             :sub {0 {:class :news}}}]}
+             :sub [{:token 0 :class :news}]}]}

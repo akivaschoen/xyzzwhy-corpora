@@ -1,8 +1,8 @@
 {:classname :item
  :type :sub
- :fragment [{:text "0%"
+ :fragment [{:text "%10"
              :article ["a Laserdisc copy of" "a VHS cassette of" "a Betamax of"]
-             :sub {0 {:class :movies}}}
+             :sub [{:token 10 :class :movies}]}
             {:text ["Aquanet" "spackle" "spray-on bacon"]
              :article "can of"}
             {:text "books"
@@ -41,9 +41,8 @@
             {:text "llama treats"
              :article "bag of"}
             {:text "magic scroll"
-             :follow-up {:fragment [{:text "It's a spell of %0."
-                                     :sub {0 {:class :spell
-                                              :config [:no-article]}}}]}}
+             :follow-up {:fragment [{:text "It's a spell of %10."
+                                     :sub [{:token 10 :class :spell :config [:no-article]}]}]}}
             {:text "movie ticket"
              :decorator {:prefix {:fragment {:text "old"}}}
              :follow-up {:fragment [{:text "It's already been torn."}
@@ -62,13 +61,12 @@
             {:text "puppy"
              :decorator {:prefix {:fragment [{:text ["growling" "hungry" "panting" "playful"
                                                      "sleeping" "sleepy" "tumbly"]}]}}}
-            {:text "receipt from %0 outfit rental"
-             :subs {0 {:class :animal}}}
+            {:text "receipt from %10 outfit rental"
+             :sub [{:token 10 :class :animal}]}
             {:text "sandwich"
              :decorator {:prefix {:fragment [{:text ["damp" "deep-fried" "half-eaten" "moist"]}]}}}
-            {:text "signed photograph of %0"
-             :sub {0 {:class :person
-                      :qualifier :famous}}}
+            {:text "signed photograph of %10"
+             :sub [{:token 10 :class :person :qualifier :famous}]}
             {:text "slide rule"}
             {:text "Snausages"}
             {:text "sword"

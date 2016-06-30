@@ -47,16 +47,16 @@
                                     {:text "You notice an unusual stain in the carpet."}
                                     {:text "There's an unusual stain in the carpet next to a usual stain."}
                                     {:text "The ceiling fan is spinning dangerously fast."}
-                                    {:text "The walls are covered with %0 posters."
-                                     :sub {0 {:class :person}}}
+                                    {:text "The walls are covered with %10 posters."
+                                     :sub [{:token 10 :class :person}]}
                                     {:text "There's a pile of clothes nearby."}]}}
             {:text "breezy cave"
              :type :exterior
              :prep ["in" "near" "in front of"]
              :follow-up {:fragment [{:text "There's a constant breeze rising up from the depths."}
-                                    {:text "Wide and low, the cave gently slopes %0-%1 here."
-                                     :sub {0 {:class :direction}
-                                           1 {:class :direction}}}
+                                    {:text "Wide and low, the cave gently slopes %10-%11 here."
+                                     :sub [{:token 10 :class :direction}
+                                           {:token 11 :class :direction}]}
                                     {:text "It smells of warm packing peanuts."}
                                     {:text "It's really breezy. Gale-force breezy."}
                                     {:text "It's seems over-oxygenated. You get light-headed."}
@@ -69,9 +69,9 @@
                                     {:text "A dust storm is approaching."}
                                     {:text "It looks like it might rain soon."}
                                     {:text "Snow is gently falling."}
-                                    {:text "%0 is here, looking %1."
-                                     :sub {0 {:class :person}
-                                           1 {:class :adjective}}}
+                                    {:text "%10 is here, looking %11."
+                                     :sub [{:token 10 :class :person}
+                                           {:token 11 :class :adjective}]}
                                     {:text "Clearly the drugs have begun to take hold."}]}}
             {:text "coffin"
              :type :interior
@@ -83,8 +83,8 @@
             {:text "dark area"
              :type :interior
              :prep "in"
-             :follow-up {:fragment [{:text "It is pitch black here. You're likely to be eaten by %0."
-                                     :sub {0 {:class :actor}}}
+             :follow-up {:fragment [{:text "It is pitch black here. You're likely to be eaten by %10."
+                                     :sub [{:token 10 :class :actor}]}
                                     {:text "It's really dark here. Like... REALLY dark."}
                                     {:text "It just got slightly darker somehow."}
                                     {:text "It's so dark you can taste it. Tastes like dark."}
@@ -142,8 +142,8 @@
              :follow-up {:fragment [{:text "There is a freshly laid grave nearby."}
                                     {:text "There is an open grave nearby. It's empty."}
                                     {:text "There is an open grave nearby. There's a phone book in it."}
-                                    {:text "There is an open grave nearby. It's full of %0."
-                                     :sub {0 {:class :drink :config [:no-article]}}}
+                                    {:text "There is an open grave nearby. It's full of %10."
+                                     :sub [{:token 10 :class :drink :config [:no-article]}]}
                                     {:text "There is an open grave nearby. It's full of molten peanut butter."}
                                     {:text "There are fresh footprints here."}
                                     {:text "A lazy mist drifts amongst the tombstones."}
@@ -273,10 +273,9 @@
                                     {:text "Someone has spray-painted 'I crave brown baths' here."}
                                     {:text "Inside you hear the sound of repulsed joy."}
                                     {:text "The door has been boarded up."}
-                                    {:text "%0 is patiently waiting in line by %1."
-                                     :sub {0 {:class :person}
-                                           1 {:class :gender
-                                              :case :compound}}}
+                                    {:text "%10 is patiently waiting in line by %11."
+                                     :sub [{:token 10 :class :person}
+                                           {:token 11 :class :gender :case :compound}]}
                                     {:text "The building looks like it has been condemned."}]}}
             {:text "Starbucks"
              :type :exterior

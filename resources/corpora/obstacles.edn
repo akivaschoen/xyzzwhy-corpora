@@ -30,10 +30,10 @@
             {:text "a convenient reclosing tab"}
             {:text "a lengthy German noun"}
             {:text "your own unwillingness to improve yourself"}
-            {:text "%0's sheer force of will"
-             :subs {0 {:class :person}}}
-            {:text "%0's birthday party"
-             :subs {0 {:class :person}}}
+            {:text "%10's sheer force of will"
+             :subs [{:token 10 :class :person}]}
+            {:text "%10's birthday party"
+             :subs [{:token 10 :class :person}]}
             {:text "a delicious Nutter Butter"}
             {:text "double-double Animal style"}
             {:text "someone who doesn’t know how to eat a goddamned Oreo properly"}

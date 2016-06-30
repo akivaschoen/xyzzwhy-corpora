@@ -1,53 +1,43 @@
 {:classname :attack-event
  :type :event
  :fragment [{:text "%0 attacks you and knocks you out. You awake sometime later %1."
-             :sub {0 {:class :actor}
-                   1 {:class :location}}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :location}]}
             {:text "%0 attacks you but you fight back with %1,"
-             :sub {0 {:class :actor}
-                   1 {:class :attack}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}]
              :follow-up {:fragment [{:text "winning the battle."}
                                     {:text "taking only a hit to your pride."}]}}
             {:text "%0 attacks you but you fight back with %1."
-             :sub {0 {:class :actor}
-                   1 {:class :attack}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}]
              :follow-up {:fragment [{:text "It isn't enough: you lose."}
                                     {:text "This scares the shit out of %2. %3 runs away."
-                                     :sub {2 {:ref 0
-                                              :class :gender
-                                              :case :objective}
-                                           3 {:ref 0
-                                              :class :gender
-                                              :case :subjective}}}]}}
+                                     :sub [{:token 2 :ref 0 :class :gender :case :objective}
+                                           {:token 3 :ref 0 :class :gender :case :subjective}]}]}}
             {:text "%0 attacks with %1. You execute %2."
-             :sub {0 {:class :actor}
-                   1 {:class :attack}
-                   2 {:class :attack}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}
+                   {:token 2 :class :attack}]
              :follow-up {:fragment [{:text "You are victorious!"}
                                     {:text "You have been killed."}
                                     {:text "You have been slain!"}
                                     {:text "So much blood... but is it yours or %3?"
-                                     :sub {3 {:ref 0
-                                              :class :gender
-                                              :case :possessive}}}
+                                     :sub [{:token 3 :ref 0 :class :gender :case :possessive}]}
                                     {:text "%3 keels over all dead and stuff."
-                                     :sub {3 {:ref 0
-                                              :class :gender
-                                              :case :subjective}}}]}}
+                                     :sub [{:token 3 :ref 0 :class :gender :case :subjective}]}]}}
             {:text "%0 attacks with %1. You respond with %2. You are defeated."
-             :sub {0 {:class :actor}
-                   1 {:class :attack}
-                   2 {:class :attack}}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}
+                   {:token 2 :class :attack}]}
             {:text "%0 attacks with %1. You strike back with %2. FATALITY. But who?!"
-             :sub {0 {:class :actor}
-                   1 {:class :attack}
-                   2 {:class :attack}}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}
+                   {:token 2 :class :attack}]}
             {:text "%0 attacks with %1. You with %2."
-             :sub {0 {:class :actor}
-                   1 {:class :attack}
-                   2 {:class :attack}}
+             :sub [{:token 0 :class :actor}
+                   {:token 1 :class :attack}
+                   {:token 2 :class :attack}]
              :follow-up {:fragment [{:text "Look at you what with the killing and all."}
                                     {:text "%3 is a bloodstain."
-                                     :sub {3 {:ref 0
-                                              :class :gender
-                                              :case :subjective}}}]}}]}
+                                     :sub [{:token 3 :ref 0 :class :gender :case :subjective}]}]}}]}
