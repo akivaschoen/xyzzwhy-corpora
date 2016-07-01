@@ -1,4 +1,5 @@
 {:classname :game
+ :type :sub
  :config [:no-article]
  :fragment [{:text "Agricola"
              :qualifier :tabletop}
