@@ -10,7 +10,7 @@
             {:text "%0 marches up to you and %1"
              :sub [{:token 0 :class :person}
                    {:token 1 :class :dialogue}]}
-            {:text "You check your messages:"
+            {:text "You check your messages: "
              :follow-up {:fragment [{:text "%0 %1"
                                      :sub [{:token 0 :class :person :config [:no-groups]}
                                            {:token 1 :class :dialogue}]}]}}]}

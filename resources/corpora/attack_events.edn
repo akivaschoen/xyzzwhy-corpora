@@ -3,19 +3,19 @@
  :fragment [{:text "%0 attacks you and knocks you out. You awake sometime later %1."
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :location}]}
-            {:text "%0 attacks you but you fight back with %1,"
+            {:text "%0 attacks you but you fight back with %1, "
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :attack}]
              :follow-up {:fragment [{:text "winning the battle."}
                                     {:text "taking only a hit to your pride."}]}}
-            {:text "%0 attacks you but you fight back with %1."
+            {:text "%0 attacks you but you fight back with %1. "
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :attack}]
              :follow-up {:fragment [{:text "It isn't enough: you lose."}
                                     {:text "This scares the shit out of %2. %3 runs away."
                                      :sub [{:token 2 :ref 0 :class :gender :case :objective}
                                            {:token 3 :ref 0 :class :gender :case :subjective}]}]}}
-            {:text "%0 attacks with %1. You execute %2."
+            {:text "%0 attacks with %1. You execute %2. "
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :attack}
                    {:token 2 :class :attack}]
@@ -34,7 +34,7 @@
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :attack}
                    {:token 2 :class :attack}]}
-            {:text "%0 attacks with %1. You with %2."
+            {:text "%0 attacks with %1. You with %2. "
              :sub [{:token 0 :class :actor}
                    {:token 1 :class :attack}
                    {:token 2 :class :attack}]

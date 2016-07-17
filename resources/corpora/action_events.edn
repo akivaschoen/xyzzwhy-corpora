@@ -112,8 +112,7 @@
                                     {:text "You read a bit before tossing it over your shoulder and then doing the electric slide."}]}}
 
             {:text "You peek out the window. "
-             :follow-up {:config [:optional]
-                         :fragment [{:text "%0 is messing around with your mailbox. You crouch in fear."
+             :follow-up {:fragment [{:text "%0 is messing around with your mailbox. You crouch in fear."
                                      :sub [{:token 0 :class :person}]}
                                     {:text "%0 is laying facedown in your flowerbed. You sink to your knees with worry."
                                      :sub [{:token 0 :class :person}]}
@@ -134,8 +133,8 @@
             {:text "You pick up %0"
              :sub [{:token 0 :class :item}]
              :follow-up {:fragment [{:text "."}
-                                    {:text "hold it close to your chest."}
-                                    {:text "hold it up to %1's face."
+                                    {:text " and hold it close to your chest."}
+                                    {:text " and hold it up to %1's face."
                                      :sub [{:token 1 :class :person}]}]}}
 
             {:text "You start eating %0 and don't stop until you're done."

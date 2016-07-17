@@ -19,7 +19,7 @@
                    {:token 21 :class :item}]}
             {:text "%20 slinks up behind you."
              :sub [{:token 20 :class :actor}]}
-            {:text "%20 wanders by,"
+            {:text "%20 wanders by, "
              :sub [{:token 20 :class :actor}]
              :follow-up {:fragment [{:text "doing algebra and shit."}
                                     {:text "playing a recorder."}
@@ -32,11 +32,13 @@
             {:text "A hollow voice intones, '%20'"
              :sub [{:token 20 :class :intonation}]}
             {:text "A fire truck goes by."
-             :follow-up {:fragment [{:text "It's covered in ice."}
-                                    {:text "It's playing a funeral dirge."}]}}
+             :follow-up {:config [:optional]
+                         :fragment [{:text " It's covered in ice."}
+                                    {:text " It's playing a funeral dirge."}]}}
             {:text "An ice cream truck goes by."
-             :follow-up {:fragment [{:text "It's on fire."}
-                                    {:text "It's going by at nearly 212020 mph. Somehow, a group of children are managing to keep up."}]}}
+             :follow-up {:config [:optional]
+                         :fragment [{:text " It's on fire."}
+                                    {:text " It's going by at nearly 212,020 mph. Somehow, a group of children are managing to keep up."}]}}
              {:text "It appears abandoned."}
              {:text "It seems that no one has been here for a long time."}
              {:text "It smells %20."
@@ -58,11 +60,12 @@
             {:text "The words 'Knifekitten lives!' are spray-painted on a wall here."}
             {:text "You drop %20 here."
              :sub [{:token 20 :class :item}]
-             :follow-up {:fragment [{:text "It bursts into flames."}
-                                    {:text "It turns into a wisp of smoke."}
-                                    {:text "And then some really bad CGI happens."}
-                                    {:text "It pierces the crust of the Earth."}
-                                    {:text "It bounces right back into your hand."}]}}
+             :follow-up {:config [:optional]
+                         :fragment [{:text " It bursts into flames."}
+                                    {:text " It turns into a wisp of smoke."}
+                                    {:text " And then some really bad CGI happens."}
+                                    {:text " It pierces the crust of the Earth."}
+                                    {:text " It bounces right back into your hand."}]}}
             {:text "You hear %20 in the distance."
              :sub [{:token 20 :class :noise}]}
             {:text "You hear the sound of %20 nearby."
@@ -75,9 +78,11 @@
                    {:token 21 :class :adjective}]}
             {:text "You pick up %20."
              :sub [{:token 20 :class :item}]
-             :follow-up {:fragment [{:text "It's covered in dust."}]}}
+             :follow-up {:config [:optional]
+                         :fragment [{:text " It's covered in dust."}]}}
             {:text "You see %20 here."
              :sub [{:token 20 :class :item}]
-             :follow-up {:fragment [{:text "It looks oddly familiar"}]}}
+             :follow-up {:config [:optional]
+                         :fragment [{:text " It looks oddly familiar"}]}}
             {:text "You see a sign here. On it is written '%20'"
              :sub [{:token 20 :class :sign}]}]}

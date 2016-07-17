@@ -29,12 +29,12 @@
             {:text "%0 is calling from %1"
              :sub [{:token 0 :class :person}
                    {:token 1 :class :location :config [:no-prep]}]
-             :follow-up {:fragment [{:text "asking if %2 can come out and play."
+             :follow-up {:fragment [{:text " asking if %2 can come out and play."
                                      :sub [{:token 2 :class :person}]}
-                                    {:text "asking for %2."
+                                    {:text " asking for %2."
                                      :sub [{:token 2 :class :item}]}
-                                    {:text "taking responsibility for a recent %2."
-                                     :sub [{:token 2 :class :disaster}]}]}}
+                                    {:text " taking responsibility for a recent %2."
+                                     :sub [{ :token 2 :class :disaster}]}]}}
             {:text "%0 makes a rude noise. %1 points surreptitiously to %2 nearby."
              :sub [{:token 0 :class :person}
                    {:token 1 :ref 0 :class :gender :case :subjective}
@@ -45,15 +45,15 @@
             {:text "%0 slams down a half-empty glass of %1."
              :sub [{:token 0 :class :person}
                    {:token 1 :class :drink :config [:no-prep :no-article]}]
-             :follow-up {:fragment [{:text "'All this nonsense about %2 needs to stop! I can't take it anymore!'"
+             :follow-up {:fragment [{:text " 'All this nonsense about %2 needs to stop! I can't take it anymore!'"
                                      :sub [{:token 2 :class :item}]}
-                                    {:text "'They're making plans for Nigel! They want what's best for him!'"}
-                                    {:text "'You can't go up against city hall!'"}
-                                    {:text "'I just can't take you seriously anymore!'"}
-                                    {:text "'MOM?!'"}]}}
+                                    {:text " 'They're making plans for Nigel! They want what's best for him!'"}
+                                    {:text " 'You can't go up against city hall!'"}
+                                    {:text " 'I just can't take you seriously anymore!'"}
+                                    {:text " 'MOM?!'"}]}}
             {:text "%0 starts breakdancing and won't stop no matter how much you scream."
              :sub [{:token 0 :class :person}]}
-            {:text "%0 suddenly appears out of the shadows and"
+            {:text "%0 suddenly appears out of the shadows and "
              :sub [{:token 0 :class :actor}]
              :follow-up {:fragment [{:text "hisses at you, then scrambles away like a spider."}
                                     {:text "says, 'Oh, sorry about that,' then retreats back into the shadows."}
