@@ -4,7 +4,7 @@
              :article ["a Laserdisc copy of" "a VHS cassette of" "a Betamax of"]
              :sub [{:token 10 :class :movies}]}
             {:text ["Aquanet" "spackle" "spray-on bacon"]
-             :article "can of"}
+             :article "a can of"}
             {:text "books"
              :article "some"
              :decorator {:prefix {:config [:multiple]
@@ -22,7 +22,7 @@
             {:text "discarded puppets"
              :article ["a collection of" "a pile of" "a stack of" "a stash of"]}
             {:text "fat-soluble Jesus"
-             :article "bottle of"}
+             :article "a bottle of"}
             {:text "floppy disk"}
             {:text ["football" "soccer ball"]
              :decorator {:prefix {:fragment [{:text ["deflated" "huge" "oddly-shaped" "radioactive" "tiny"]}]}}}
@@ -30,7 +30,7 @@
              :article ["your" "your mom's" "your dad's"]
              :decorators {:prefix {:fragment [{:text ["first" "second" "third" "fourth" "fifth" "sixth"]}]}}}
             {:text ["jean shorts" "parachute pants" "skinny jeans"]
-             :article "pair of"}
+             :article "a pair of"}
             {:text "giant styrofoam peanut"}
             {:text "kitten"
              :decorator {:prefix {:fragment [{:text ["angry" "hungry" "meowing" "playful"
@@ -39,7 +39,7 @@
             {:text "Lincoln Log"
              :decorator {:prefix {:fragment [{:text ["giant" "radioactive" "smelly" "wet"]}]}}}
             {:text "llama treats"
-             :article "bag of"}
+             :article "a bag of"}
             {:text "magic scroll"
              :follow-up {:fragment [{:text "It's a spell of %10."
                                      :sub [{:token 10 :class :spell :config [:no-article]}]}]}}
@@ -51,13 +51,13 @@
             {:text "no tea"}
             {:text "newspaper"}
             {:text "pellets"
-             :article "bag of"
+             :article "a bag of"
              :decorator {:prefix {:fragment [{:text ["rabbit" "slick" "stinky" "tiny"]}]}}}
             {:text ["pen" "pencil"]}
             {:text "phone book"}
             {:text "pinecone"}
             {:text ["Cheetos" "Doritos" "marbles" "popcorn" "potatoes" "rice"]
-             :article "bag of"}
+             :article "a packet of"}
             {:text "puppy"
              :decorator {:prefix {:fragment [{:text ["growling" "hungry" "panting" "playful"
                                                      "sleeping" "sleepy" "tumbly"]}]}}}
