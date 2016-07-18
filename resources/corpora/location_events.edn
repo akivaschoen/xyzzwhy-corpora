@@ -57,11 +57,12 @@
              :sub [{:token 0 :class :location}]}
             {:text "You are magically teleported to %0!"
              :sub [{:token 0 :class :location :config [:no-prep]}]}
-            {:text "You are serving jury duty. "
-             :follow-up {:fragment [{:text "The prosecuting attorney insists on speaking through a broken bullhorn."}
-                                    {:text "They hand out Chicken McNuggets but they're stone cold."}
-                                    {:text "The judge is dressed like Dr. Frankenfurter."}
-                                    {:text "You're unsure why they insist the jury sit in a vat of carbonated %0."
+            {:text "You are serving jury duty."
+             :follow-up {:config [:optional]
+                         :fragment [{:text " The prosecuting attorney insists on speaking through a broken bullhorn."}
+                                    {:text " They hand out Chicken McNuggets but they're stone cold."}
+                                    {:text " The judge is dressed like Dr. Frankenfurter."}
+                                    {:text " You're unsure why they insist the jury sit in a vat of carbonated %0."
                                      :sub [{:token 0 :class :drink :config [:no-article]}]}]}}
             {:text "You are standing %0 of %1."
              :sub [{:token 0 :class :direction}
@@ -84,7 +85,7 @@
              :sub [{:token 0 :class :location}]}
             {:text "You cripwalk %0 to %1."
              :sub [{:token 0 :class :direction}
-                   {:token 1 :class :location}]}
+                   {:token 1 :class :location :config [:no-prep]}]}
             {:text "You emerge %0."
              :sub [{:token 0 :class :location}]}
             {:text "You fall down a flight of stairs and into %0."
@@ -93,7 +94,7 @@
              :sub [{:token 0 :class :location}]}
             {:text "You find yourself %0."
              :sub [{:token 0 :class :location}]}
-            {:text "You find your way blindly and end up %0."
+            {:text "You feel your way blindly and end up %0."
              :sub [{:token 0 :class :location}]}
             {:text "You flip the Game Select selector and find yourself %0."
              :sub [{:token 0 :class :location}]}

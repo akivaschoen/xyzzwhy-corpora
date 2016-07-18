@@ -1,6 +1,5 @@
 {:classname :animal
  :type :sub
- :config [:article]
  :fragment [{:text "aardvark"}
             {:text "alligator"}
             {:text "alpaca"}

@@ -23,5 +23,4 @@
             {:text "broth"
              :article "some"
              :decorator {:prefix {:fragment [{:text ["beef" "chicken" "pork" "seafood" "vegetable"]}]}}}
-            {:text "scotch"
-             :article "a"}]}
+            {:text "scotch"}]}
