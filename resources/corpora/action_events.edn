@@ -78,7 +78,8 @@
                    {:token 2 :class :item}]}
 
             {:text "You check your inventory. "
-             :follow-up {:fragment [{:text "You are empty-handed."}
+             :follow-up {:config [:required]
+                         :fragment [{:text "You are empty-handed."}
                                     {:text "You are carrying %0."
                                      :sub [{:token 0 :class :item}]}
                                     {:text "You have %0 and %1."
