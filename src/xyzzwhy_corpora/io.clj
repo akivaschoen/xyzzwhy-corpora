@@ -4,9 +4,7 @@
             [clojure.java.io :as io])
   (:import java.io.PushbackReader))
 
-
 (defonce corpora-dir "resources/corpora/")
-
 
 ;;
 ;; EDN Functions
