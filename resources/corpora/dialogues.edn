@@ -1,5 +1,6 @@
 {:classname :dialogue
  :type :sub
+ :config [:no-article]
  :fragment [{:text "asks, 'Are you following me?'"}
             {:text "asks, 'Can I have a hug?'"}
             {:text "asks, 'Does it smell like %10 in here to you?'"

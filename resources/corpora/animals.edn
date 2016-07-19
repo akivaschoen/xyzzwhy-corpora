@@ -35,8 +35,8 @@
             {:text "cow"}
             {:text "coyote"}
             {:text "crocodile"}
-            {:text ["crow"]
-             :decorator {:prefix {:option ["cawing"]}}
+            {:text "crow"
+             :decorator {:prefix {:option "cawing"}}
              :sound ["caws" "caws at you" "caws forlornly" "caws quietly"]}
             {:text "dingo"}
             {:text ["dog" "puppy"]

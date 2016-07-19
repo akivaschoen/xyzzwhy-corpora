@@ -1,6 +1,5 @@
 {:classname :disaster
  :type :sub
- :config [:article]
  :fragment [{:text "avalanche"}
             {:text "duststorm"}
             {:text "fire"}

@@ -58,8 +58,7 @@
             {:text "You are magically teleported to %0!"
              :sub [{:token 0 :class :location :config [:no-prep]}]}
             {:text "You are serving jury duty."
-             :follow-up {:config [:optional]
-                         :fragment [{:text " The prosecuting attorney insists on speaking through a broken bullhorn."}
+             :follow-up {:fragment [{:text " The prosecuting attorney insists on speaking through a broken bullhorn."}
                                     {:text " They hand out Chicken McNuggets but they're stone cold."}
                                     {:text " The judge is dressed like Dr. Frankenfurter."}
                                     {:text " You're unsure why they insist the jury sit in a vat of carbonated %0."

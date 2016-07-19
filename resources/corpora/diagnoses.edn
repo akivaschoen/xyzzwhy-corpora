@@ -1,5 +1,6 @@
 {:classname :diagnosis
  :type :sub
+ :config [:no-article]
  :fragment [{:text "absurdly sticky"}
             {:text "affable"}
             {:text "confused"}

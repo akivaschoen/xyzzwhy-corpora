@@ -29,7 +29,8 @@
             {:text "%0 is calling from %1"
              :sub [{:token 0 :class :person}
                    {:token 1 :class :location :config [:no-prep]}]
-             :follow-up {:fragment [{:text " asking if %2 can come out and play."
+             :follow-up {:config [:required]
+                         :fragment [{:text " asking if %2 can come out and play."
                                      :sub [{:token 2 :class :person}]}
                                     {:text " asking for %2."
                                      :sub [{:token 2 :class :item}]}
@@ -55,7 +56,8 @@
              :sub [{:token 0 :class :person}]}
             {:text "%0 suddenly appears out of the shadows and "
              :sub [{:token 0 :class :actor}]
-             :follow-up {:fragment [{:text "hisses at you, then scrambles away like a spider."}
+             :follow-up {:config [:required]
+                         :fragment [{:text "hisses at you, then scrambles away like a spider."}
                                     {:text "says, 'Oh, sorry about that,' then retreats back into the shadows."}
                                     {:text "says, '%1 will see you now,' then slowly retreats back into the shadows."
                                      :sub [{:token 1 :class :actor}]}]}}

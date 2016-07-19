@@ -1,5 +1,6 @@
 {:classname :tertiary-event
  :type :event
+ :config [:no-article]
  :fragment [{:text "A basketball bounces by."}
             {:text "A cool breeze blows by."}
             {:text "A warm breeze blows by."}
@@ -9,6 +10,8 @@
              :sub [{:token 20 :class :garment :config [:no-article]}]}
             {:text "Someone is having fun against their will nearby."}
             {:text "Someone is struggling with warped Tupperware nearby."}
+            {:text "Someone nearby farts loudly."}
+            {:text "Someone nearby farts quietly."}
             {:text "Someone nearby is repeatedly zipping and unzipping a duffel bag."}
             {:text "Something nearby is on fire."}
             {:text "Thunder coughs gently in the distance."}
@@ -54,6 +57,7 @@
             {:text "You wish you had your grandpappy's harmonica."}
             {:text "You yawn."}
             {:text "You're catching your second wind."}
+            {:text "You're catching your third wind."}
             {:text "You're certain these aren't your clothes."}
             {:text "You're not wearing any underwear."}
             {:text "You're wearing two bowties for some reason."}

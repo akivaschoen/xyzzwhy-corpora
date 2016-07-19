@@ -1,5 +1,6 @@
 {:classname :attack
  :type :sub
+ :config [:no-article]
  :fragment [{:text "%10"
              :sub [{:token 10 :class :item}]}
             {:text "an antiparticle dildo"}
